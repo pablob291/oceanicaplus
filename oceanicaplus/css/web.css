@@ -9,7 +9,7 @@ html {
 	font-family: 'Raleway', italic;
 }
 body {
-	 background: url(../img/sea.jpg) no-repeat center center fixed;
+	background: url(../img/sea.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,14 +21,14 @@ body {
 }
 header {
 	width: 100%;
-	height: 200px;
-	border: 2px solid green;
+	height: 190px;
+	/*border: 2px solid green;*/
 	background-color: #A1D6FB;
 	background-image: linear-gradient(#A1D6FB, #FFFFFF);
 }
 	#info{
-		border: 1px solid black;
-		height: 60px;
+		/*border: 1px solid black;*/
+		height: 45px;
 		width: 60%;
 		margin-right: auto;
 		margin-left: auto;
@@ -38,13 +38,14 @@ header {
 		color: black;
 		font-size: 16px;
 	}
+	.link:hover {
+		color: #036CB6;
+	}
 	#tel{
-		border: 1px solid blue;
+		/*border: 1px solid blue;*/
 		height: 22px;
 		width: 155px;
-		padding: 2px;
-		margin-top: 21px;
-		margin-bottom: 27px;
+		padding: 10px;
 		float: right;
 	}
 	#telico{
@@ -52,12 +53,10 @@ header {
 		height: 20px;
 	}
 	#loc{
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		height: 22px;
-		padding: 2px;
 		width: 155px;
-		margin-top: 21px;
-		margin-bottom: 27px;
+		padding: 10px;
 		float: right;
 	}
 	#locic{
@@ -66,19 +65,19 @@ header {
 	}
 	#sitemenu{
 		width: 60%;
-		height: 135px;
+		height: 140px;
 		margin-right: auto;
 		margin-left: auto;
-		border: 1px solid green;
+		/*border: 1px solid green;*/
 	}
 	#logo{
 		width: 360px;
-		height: 135px;
-		border: 1px solid purple;
-		margin-top: auto;
+		height: 140px;
+		/*border: 1px solid purple;*/
+		float: right;
 	}
 	#imglogo{
-		border:1px solid orange;
+		/*border:1px solid orange;*/
 		margin-top: 5px;
 		height: 120px; 
 		width: 130px;
@@ -91,29 +90,28 @@ header {
 		text-align: center;
 	}
 	#titulodesc{
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		text-align: center;
 		font-size: 20px;
 	}
 nav {
 	width: 100%;
 	height: 70px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	background-color: #FFFFFF
 }
 	.nav1 {
-	width: 60%;
-	height: 50px;
-	border: 1px solid orange;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 20px;
+		width: 60%;
+		height: 50px;
+		/*border: 1px solid orange;*/
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 20px;
 	}
 	.boton{
 		margin: 0px 0px 0px 40px;
 		font-size: 16px;
-		}
-
+	}
 			li{
 				display: inline-block;
 				list-style: none;
@@ -123,44 +121,113 @@ nav {
 				text-decoration: none;
 				color: black;
 			}
+			.boton:hover{
+				color: #A1D6FB;
+			}
 section {
   	width: 100%;
-	height: 500px;
-	border: 2px solid blue;
+	height: 600px;
+	/*border: 2px solid blue;*/
 	margin-right: auto;
 	margin-left: auto;
 }
 article {
 	width: 60%;
-	height: 100%;
-	border: 2px solid grey;
+	height: 96%;
+	border: 2px solid #A1D6FB;
 	background-color: white;
+	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
-}
-fieldset {
-	margin: 10px 10px 10px 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
+	#cab {
+		width: 90%;
+		height: 90%;
+		/*border: 2px solid violet;*/
+		margin-top: 18px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 10px;
+		text-align: center;
+	}
+	#text {
+		color: #989898;
+	}
+	.slider {
+		width: 60%;
+		margin: auto;
+		overflow: hidden;
+	}
+	.slider ul {
+		display: flex;
+		padding: 0;
+		width: 500%;
+		animation: cambio 20s infinite alternate linear;
+	}
+	.slider li {
+		width: 100%;
+		list-style: none;
+	}
+	.slider img {
+		width: 100%;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+	.greg {
+		width: 35%;
+		margin: auto;
+		overflow: hidden;
+	}
+	.greg ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: cambio 20s infinite alternate linear;
+	}
+	.greg li {
+		width: 100%;
+		list-style: none;
+	}
+	.greg img {
+		width: 100%;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
 footer {
 	width: 100%;
-	height: 120px;
-	border: 2px solid black;
+	height: 100%;
+	/*border: 2px solid black;*/
 	background-color: #FFFFFF;
 }
 	.footer1 {
-	width: 60%;
-	height: 89px;
-	clear: both;
-	border: 2px solid orange;
-	padding-top: 2%;
-	margin-right: auto;
-	margin-left: auto;
+		width: 60%;
+		height: 89px;
+		clear: both;
+		/*border: 2px solid orange;*/
+		padding-top: 2%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	#fbk{
-		border: 1px solid blue;
+		/*border: 1px solid blue;*/
 		height: 22px;
 		width: 155px;
 		padding: 2px;
@@ -171,13 +238,24 @@ footer {
 		height: 20px;
 	}
 	#twt{
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		height: 22px;
 		padding: 2px;
 		width: 155px;
 		float: left;
 	}
 	#twitter{
+		width: 20px;
+		height: 20px;
+	}
+	#inst{
+		/*border: 1px solid red;*/
+		height: 22px;
+		padding: 2px;
+		width: 155px;
+		float: left;
+	}
+	#instagram{
 		width: 20px;
 		height: 20px;
 	}
