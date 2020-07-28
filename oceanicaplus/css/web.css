@@ -143,10 +143,20 @@ article {
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
-	#cab {
+	#cab1 {
 		width: 90%;
 		height: 90%;
 		/*border: 2px solid violet;*/
+		margin-top: 18px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 10px;
+		text-align: center;
+	}
+	#cab2 {
+		width: 90%;
+		height: 90%;
+		/*border: 2px solid green;*/
 		margin-top: 18px;
 		margin-right: auto;
 		margin-left: auto;
@@ -210,6 +220,29 @@ article {
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+	#cab3 {
+		width: 90%;
+		height: 90%;
+		/*border: 2px solid violet;*/
+		margin-top: 18px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 10px;
+		text-align: center;
+	}
+fieldset {
+	border-color: #036CB6;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+	.press {
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	align-content: center;
+	display: inline;
 }
 footer {
 	width: 100%;
